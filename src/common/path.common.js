@@ -1,9 +1,9 @@
-import fs from "fs";
-import { fileURLToPath } from "url";
-import path from "path";
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 export function readDirFromPath(path) {
-  return fs.readdirSync(path).filter((file) => file.endsWith(".js"));
+  return fs.readdirSync(path).filter((file) => file.endsWith('.js'));
 }
 
 export function createFilePath(folder) {

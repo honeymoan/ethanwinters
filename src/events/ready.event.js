@@ -1,5 +1,5 @@
-import { Events } from "discord.js";
-import getLogger from "../config/logger.config.js";
+import { Events } from 'discord.js';
+import getLogger from '../config/logger.config.js';
 
 const log = getLogger();
 

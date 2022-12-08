@@ -1,5 +1,5 @@
-import { Events } from "discord.js";
-import getLogger from "../config/logger.config.js";
+import { Events } from 'discord.js';
+import getLogger from '../config/logger.config.js';
 
 const log = getLogger();
 
@@ -21,8 +21,8 @@ export async function execute(interaction) {
   } catch (error) {
     log.error(error);
     await interaction.reply({
-      content: "There was an error while executing this command!",
-      ephemeral: true,
+      content: 'There was an error while executing this command!',
+      ephemeral: true
     });
   }
 }

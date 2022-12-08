@@ -1,13 +1,13 @@
-import pino from "pino";
+import pino from 'pino';
 
 const logger = pino({
-  level: process.env.NODE_ENV === "production" ? "info" : "debug",
+  level: process.env.NODE_ENV === 'development' ? 'debug' : 'info',
   transport: {
-    target: "pino-pretty",
+    target: 'pino-pretty',
     options: {
-      ignore: "pid,hostname",
-    },
-  },
+      ignore: 'pid,hostname'
+    }
+  }
 });
 
 export default function getLogger() {

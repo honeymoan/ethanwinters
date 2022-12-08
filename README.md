@@ -1,15 +1,14 @@
-# Ethan Winters `rewritten`
-    Based on Fastify + discord.js and uses ethanwinters-cms for managing stuff.
+# Ethan Winters `v2`
+    Based on Express + discord.js and uses ethanwinters-cms for managing stuff.
 
 ## Bot Information
 
-### Intents `outdated`
-- `Intents.FLAGS.GUILDS`
-- `Intents.FLAGS.GUILD_MESSAGES`
-- `Intents.FLAGS.DIRECT_MESSAGES`
+### Intents
+- `GatewayIntentBits.Guilds`
 
 ### Environment Variables
 - `EW_PORT` 
+- `EW_DISCORD_APP_ID`
 - `EW_DISCORD_TOKEN`
 
 ## Commands

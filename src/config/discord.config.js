@@ -1,7 +1,7 @@
-import { Client, GatewayIntentBits, REST } from "discord.js";
+import { Client, GatewayIntentBits, REST } from 'discord.js';
 
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds],
+  intents: [GatewayIntentBits.Guilds]
 });
 
 export function getClient() {
@@ -9,7 +9,7 @@ export function getClient() {
 }
 
 export function getRestClient(token) {
-  const rest = new REST({ version: "10" });
+  const rest = new REST({ version: '10' });
   rest.setToken(token);
   return rest;
 }

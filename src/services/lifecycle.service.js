@@ -1,10 +1,10 @@
-import path from "path";
-import { pathToFileURL } from "url";
-import * as EnvironmentVariables from "../config/env.config.js";
-import getLogger from "../config/logger.config.js";
-import { createFilePath, readDirFromPath } from "../common/path.common.js";
-import { getClient, getRestClient } from "../config/discord.config.js";
-import { Collection, Routes } from "discord.js";
+import path from 'path';
+import { pathToFileURL } from 'url';
+import * as EnvironmentVariables from '../config/env.config.js';
+import getLogger from '../config/logger.config.js';
+import { createFilePath, readDirFromPath } from '../common/path.common.js';
+import { getClient, getRestClient } from '../config/discord.config.js';
+import { Collection, Routes } from 'discord.js';
 
 const log = getLogger();
 let client = getClient();
@@ -20,15 +20,15 @@ function registerCommandsRemote(json) {
 
   restClient
     .put(Routes.applicationCommands(discordId), {
-      body: json,
+      body: json
     })
-    .then(() => log.info("Registered all slash commands successfully."))
+    .then(() => log.info('Registered all slash commands successfully.'))
     .catch(log.error.bind(log));
 }
 
 export async function registerCommands() {
   let remoteJson = [];
-  const folder = createFilePath("../commands");
+  const folder = createFilePath('../commands');
   const files = readDirFromPath(folder);
 
   client.commands = new Collection();
@@ -47,7 +47,7 @@ export async function registerCommands() {
 }
 
 export async function registerEvents() {
-  const folder = createFilePath("../events");
+  const folder = createFilePath('../events');
   const files = readDirFromPath(folder);
 
   client.commands = new Collection();

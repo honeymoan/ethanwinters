@@ -1,9 +1,9 @@
-import { SlashCommandBuilder } from "discord.js";
+import { SlashCommandBuilder } from 'discord.js';
 
 export const data = new SlashCommandBuilder()
-  .setName("sexo")
-  .setDescription("sexo bot legal top kwai");
+  .setName('sexo')
+  .setDescription('sexo bot legal top kwai');
 
 export async function execute(interaction) {
-  await interaction.reply("teste do getulio");
+  await interaction.reply('teste do getulio');
 }
