@@ -1,0 +1,39 @@
+{
+  "name": "ethanwinters",
+  "version": "2.0.0",
+  "description": "A discord bot for managing stuff like discord-scoped servers",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "start:dev": "cross-env NODE_ENV=development node index.js",
+    "format": "prettier --config .prettierrc 'src/**/*.js' --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-whiteflag/ethanwinters.git"
+  },
+  "author": "imwhiteflag",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dev-whiteflag/ethanwinters/issues"
+  },
+  "homepage": "https://github.com/dev-whiteflag/ethanwinters#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1267.0",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "pino-pretty": "^9.1.1",
+    "prettier": "^2.8.1",
+    "pino": "^8.7.0"
+  }
+}
